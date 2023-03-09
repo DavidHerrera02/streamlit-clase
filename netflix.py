@@ -15,7 +15,7 @@ def filter_by_director(name):
     return data[data['director'] == name]
 
 
-st.title("Realiza una búsqueda de película")
+st.title("Realiza una búsqueda de película David Herrera Cantu A01570789")
 load_state = st.text('Cargando la DB de netflix...')
 data = load_data(500)
 load_state.text('¿Qué peli quieres buscar?')
