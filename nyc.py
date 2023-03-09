@@ -12,7 +12,7 @@ def load_data(nrows):
                  'start_lng': 'lon'}, axis=1, inplace=True)
     return data
 
-st.title("City Bike Trips")
+st.title("City Bike Trips David Herrera Cantu A01570789")
 load_state = st.text('Cargando la DB...')
 data = load_data(500)
 load_state.text('¿Qué quieres visualizar?')
