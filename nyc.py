@@ -5,7 +5,7 @@ import codecs
 
 @st.cache
 def load_data(nrows):
-    doc = codecs.open('citibike-tripdata.csv','rU','latin1')
+    doc = codecs.open('citibike-tripdata (1).csv','rU','latin1')
     data = pd.read_csv(doc, nrows=nrows)
     data['started_at'] = pd.to_datetime(data['started_at'])
     data.rename({'start_lat': 'lat', 
